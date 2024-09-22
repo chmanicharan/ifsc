@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/lavender">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IFSC CODE VALIDATOR"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/ifscCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CadetBlue1"
+        android:layout_marginTop="25dp"
+        android:hint="Enter IFSC Code"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/validateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="validateIFSC"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="120dp"
+        android:textAlignment="center"
+        android:text="Validate"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:background="@color/CadetBlue1"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>
